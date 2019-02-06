@@ -1,0 +1,33 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10" text-center>
+          <span>Inicio de session</span>
+        </ion-col>
+      </ion-row>
+
+      
+        <ion-row>
+          <ion-col size="12" text-align: lef>
+            <label>Usuario:</label>
+            <ion-input placeholder="username" type="text" [(ngModel)]="user"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" text-align: lef>
+            <label>Contraseña:</label>
+            <ion-input placeholder="password" type="password" [(ngModel)]="pass"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="primary" (click)="ir()" type="button">Acceder</ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-card> 
+</ion-content>
